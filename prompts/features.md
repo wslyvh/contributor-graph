@@ -1,0 +1,21 @@
+Build a contributor graph of anyone who positively contributed to an open-source Github repository.
+
+- Use fetch with the Github REST API. Don't use OctoKit or additional packages
+- It should give a score to all contributors
+- It should be able to provide a date from which contributions should be included.
+- If no date is provided it should use the date the repository was created 
+- Contributions should be weighted based on the type of contributions 
+- It should reward the creator of an issue
+- It should reward the creator of a PR
+- It should reward anyone who comments on an issue
+- It should reward anyone who comments on a PR
+- It should reward anyone who reviews a PR
+- It should reward the creator of an issue with any comments received
+- It should reward the creator of an issue with any positive reactions received
+- It should reward the creator of a PR with any comments received
+- It should reward the creator of a PR with any positive reactions received
+- It should reward the creator of any PR with any comments or positive reactions received
+- It should be able to fetch a list of contributors and only output the top N contributors
+- It should be able to fetch a list of contributors and only output the top N contributors for a given time period
+- It should recursively fetch any issues, comments, PRs and reaction since the date provided
+- It should consider rate limiting and avoid making too many requests in a short period of time
