@@ -34,3 +34,12 @@ export interface Maintainer {
   htmlUrl: string;
   role: string;
 }
+
+export interface ContributorOutput {
+  metadata: {
+    repository: string;
+    runDate: string;
+    sinceDate: string | null;
+  };
+  contributors: ContributorPercentage[];
+}
