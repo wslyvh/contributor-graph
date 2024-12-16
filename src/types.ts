@@ -1,17 +1,17 @@
 export interface Contributor {
-  login: string
-  score: number
+  login: string;
+  score: number;
 }
 
 export interface ContributorMap {
-  [login: string]: number
+  [login: string]: number;
 }
 
 export interface ContributorScoreOptions {
-  owner: string
-  repo: string
-  since?: string
-  top?: number
+  owner: string;
+  repo: string;
+  since?: string;
+  top?: number;
 }
 
 export const SCORE_WEIGHTS = {
@@ -22,15 +22,15 @@ export const SCORE_WEIGHTS = {
   PR_REVIEW: 15,
   PR_COMMENT: 10,
   PR_REACTION: 3,
-}
+};
 
 export interface ContributorPercentage extends Contributor {
-  percentage: number
+  percentage: number;
 }
 
 export interface Maintainer {
-  login: string
-  avatarUrl: string
-  htmlUrl: string
-  role: string
+  login: string;
+  avatarUrl: string;
+  htmlUrl: string;
+  role: string;
 }
